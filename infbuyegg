@@ -1,0 +1,4 @@
+while wait(0.1) do
+   local args = { "pets", "moon_2025_egg", {buy_count = 1} }
+   game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ShopAPI/BuyItem"):InvokeServer(unpack(args))
+end
