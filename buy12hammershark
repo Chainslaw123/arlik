@@ -1,0 +1,11 @@
+task.spawn(function()
+        local args = {
+            [1] = "pets",
+            [2] = "summerfest_2025_hammerhead_shark",
+            [3] = {
+                ["buy_count"] = 12
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("ShopAPI/BuyItem"):InvokeServer(unpack(args))
+end)
